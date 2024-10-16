@@ -1,82 +1,39 @@
-# Lyrics Writing Bot
+Lyric Writing Bot: Your AI Multi Lingual Songwriting Assistant 🤖 🎼
+This bot is a Streamlit app that leverages Google's Generative AI models to help songwriters overcome creative blocks and add a touch of magic to their lyrics. With LyricGenie, you can:
 
-![Lyrics Writing Bot](https://img.shields.io/badge/streamlit-v1.13.0-green) ![Python](https://img.shields.io/badge/python-v3.8%2B-blue)
+Get syllable counts: Find out exactly how many syllables are in a line to maintain your melody.
+Discover perfect rhymes: Generate a list of words that rhyme with your chosen word.
+Rewrite your lyrics: Get creative suggestions to transform your existing lyrics.
+Features
 
-## Overview
+Powered by Google's Generative AI (the Gemini-Pro model).
+Playful and inspiring responses.
+Safety filters tuned specifically for musical lyric generation, ensuring a fun experience.
+How to Use
 
-The **Lyrics Writing Bot** is a Streamlit application designed to assist lyricists in generating and refining lyrics. Utilizing Google's generative AI capabilities, this bot helps users create rhymes, maintain syllable counts, and provides creative rewrites while ensuring a playful and whimsical tone. 
+Obtain a Google Generative AI API Key:
 
-## Features
+Visit the Google Cloud console and create a project or select an existing one.
+Enable the Google Generative AI API and follow the instructions to get your API key.
+Create a Configuration File (config.ini):
 
-- **Interactive Chat Interface**: Engage with the bot to get instant lyrical assistance.
-- **Customizable Lyrics Generation**: Provide prompts and get tailored responses that maintain rhyme schemes and syllable counts.
-- **Safety Settings**: The bot incorporates safety measures to avoid generating harmful content.
+Ini, TOML
+[DEFAULT]
+API_KEY = your_api_key 
+Use code with caution.
+Replace your_api_key with your actual API key.
 
-## Getting Started
+Install Streamlit:
 
-### Prerequisites
+Bash
+pip install streamlit google-generativeai
+Use code with caution.
+Save the Python Code as app.py or a similar name.
 
-- Python 3.8 or higher
-- Streamlit library
-- Google Generative AI library
+Run the App:
 
-### Installation
-
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/MaheshEECS/lyrics-writing-bot.git
-   cd lyrics-writing-bot
-   ```
-
-2. **Install Required Packages**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Set Up Configuration**:
-   Create a `config.ini` file in the root directory with your API key:
-   ```ini
-   [DEFAULT]
-   API_KEY = your_google_generative_ai_api_key
-   ```
-
-### Running the App
-
-To start the application, run the following command:
-
-```bash
+Bash
 streamlit run app.py
-```
+Use code with caution.
 
-Open your web browser and navigate to `http://localhost:8501` to access the Lyrics Writing Bot.
 
-## Usage
-
-1. **Input Your Prompt**: Type your lyrics-related query into the input box.
-2. **Receive Suggestions**: The bot will respond with creative lyric ideas while adhering to your original request.
-3. **Iterate as Needed**: Continue the conversation for further refinements or new ideas.
-
-### Example Prompts
-
-- "Can you help me rewrite this chorus to make it more playful?"
-- "I need some rhymes for the word 'heart'."
-- "How can I maintain the same syllable count but change the theme of these lyrics?"
-
-## Code Explanation
-
-- The app utilizes Streamlit for the web interface and Google Generative AI for lyric generation.
-- The lyrics generation is controlled by a tailored prompt that sets the context and instructions for the model.
-- Safety measures are implemented to filter out harmful or inappropriate content.
-
-## Contributing
-
-Contributions are welcome! If you have suggestions for improvements or new features, please fork the repository and submit a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- [Streamlit](https://streamlit.io/) - for creating an easy-to-use framework for building web apps.
-- [Google Generative AI](https://cloud.google.com/generative-ai) - for providing the underlying AI capabilities.
